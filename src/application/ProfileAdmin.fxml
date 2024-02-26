@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css">
+         <children>
+            <TextField layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="67.0" text="SEARCH" />
+            <Label layoutX="245.0" layoutY="1.0" prefHeight="115.0" prefWidth="202.0" styleClass="text-simple" stylesheets="@application.css" text="PROFILE" textFill="#e98503">
+               <font>
+                  <Font name="Century Gothic" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="135.0" prefHeight="68.0" prefWidth="105.0" text="Name : " textFill="#e98503">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="216.0" prefHeight="68.0" prefWidth="356.0" text="Change Password" textFill="#e98503">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="oldPassword" layoutX="243.0" layoutY="317.0" promptText="Old" />
+            <PasswordField fx:id="newPassword" layoutX="243.0" layoutY="357.0" promptText="New" />
+            <Label layoutX="14.0" layoutY="296.0" prefHeight="68.0" prefWidth="221.0" text="Old password" textFill="#e98503">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="336.0" prefHeight="68.0" prefWidth="221.0" text="New Password" textFill="#e98503">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button layoutX="671.0" layoutY="516.0" mnemonicParsing="false" onAction="#switchHomeScreen" prefHeight="68.0" prefWidth="105.0" styleClass="exit" stylesheets="@application.css" text="Log out" textFill="#e98503">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font></Button>
+            <ImageView fitHeight="132.0" fitWidth="118.0" layoutX="440.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/admin.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="idProfile" layoutX="114.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-simple" text=" " wrappingWidth="260.21630859375">
+               <font>
+                  <Font size="29.0" />
+               </font></Text>
+            <Button layoutX="14.0" layoutY="105.0" mnemonicParsing="false" onAction="#hideAndShowAdmin" prefHeight="34.0" prefWidth="178.0" styleClass="exit" text="Show Hide Name Surname" textFill="#e98503" />
+            <Text fx:id="hideShow" fill="#e98503" layoutX="200.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hide" wrappingWidth="139.21630859375" />
+            <Button layoutX="245.0" layoutY="422.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="53.0" prefWidth="118.0" styleClass="exit" text="Change" textFill="#e98503" />
+            <Text fx:id="errorRegister" fill="#c93131" layoutX="270.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="601.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
